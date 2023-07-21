@@ -1,0 +1,24 @@
+{
+  "name": "com.alianblank.blankappoperation",
+  "displayName": "Blank App Operation",
+  "version": "1.0.0",
+  "unity": "2017.1",
+  "description": "操作手机上的程序.\n判断是否安装\n安装APP\n打开APP",
+  "author": {
+    "name": "alianblank",
+    "url": "https://github.com/AlianBlank/BlankAppOperation"
+  },
+  "samples": [
+    {
+      "displayName": "Samples",
+      "description": "Samples",
+      "path": "Samples~"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlianBlank/BlankAppOperation.git"
+  },
+  "relatedPackages": {},
+  "type": "library"
+}

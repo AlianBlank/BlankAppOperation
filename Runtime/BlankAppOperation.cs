@@ -51,12 +51,7 @@ using System.Runtime.InteropServices;
 
 public class BlankAppOperation : MonoBehaviour
 {
-
-
 #if UNITY_IOS
-
-
-
     [DllImport("__Internal")]
     private static extern bool CanOpenURL(string urlStr);
 
@@ -66,6 +61,7 @@ public class BlankAppOperation : MonoBehaviour
 #endif
 #if UNITY_ANDROID
     private static AndroidJavaClass m_activityAndroidJavaClass;
+
     /// <summary>
     /// Plugins Activity 
     /// </summary>
@@ -77,6 +73,7 @@ public class BlankAppOperation : MonoBehaviour
             {
                 m_activityAndroidJavaClass = new AndroidJavaClass("com.alianhome.appoperation.MainActivity");
             }
+
             return m_activityAndroidJavaClass;
         }
     }
@@ -90,7 +87,6 @@ public class BlankAppOperation : MonoBehaviour
     /// <returns>返回程序是否安装</returns>
     public static bool IsExist(string packageName)
     {
-
 #if UNITY_IOS
 		return CanOpenURL(packageName);
 #endif
@@ -171,6 +167,5 @@ public class BlankAppOperation : MonoBehaviour
 #else
         return false;
 #endif
-
     }
 }
